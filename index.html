@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <input class="goal" />
+      <div class="middle">
+        <div class="left">
+          <div class="schedule panel">
+            <h1>Schedule</h1>
+            <div class="schedule-container"><div class="projected">
+                <div class="sched-header"><h2>Projected</h2> <span class="de"><sup>D</sup>/<sub>E</sub></span></div>
+              <div class="time 5am">
+                5a <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 6am">
+                6a <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 7am">
+                7a <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 8am">
+                8a <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 9am">
+                9a <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 10am">
+                10a <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 11am">
+                11a <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 12pm">
+                12p <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 1pm">
+                1p <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 2pm">
+                2p <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 3pm">
+                3p <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 4pm">
+                4p <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 5pm">
+                5p <input class="event" /><button class="score">0</span>
+              </div>
+              <div class="time 6pm">
+                6p <input class="event" /><button class="score">0</span>
+              </div>
+              <div class="time 7pm">
+                7p <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 8pm">
+                8p <input class="event" /><button class="score">0</button>
+              </div>
+            </div>
+            <div class="actual">
+              <div class="sched-header"><h2>Actual</h2><span class="de"><sup>D</sup>/<sub>E</sub></span></div>
+              <div class="time 5am">
+                5a <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 6am">
+                6a <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 7am">
+                7a <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 8am">
+                8a <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 9am">
+                9a <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 10am">
+                10a <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 11am">
+                11a <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 12pm">
+                12p <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 1pm">
+                1p <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 2pm">
+                2p <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 3pm">
+                3p <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 4pm">
+                4p <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 5pm">
+                5p <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 6pm">
+                6p <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 7pm">
+                7p <input class="event" /><button class="score">0</button>
+              </div>
+              <div class="time 8pm">
+                8p <input class="event" /><button class="score">0</button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="todo panel">
+            <h2>To-Do's</h2>
+            <ul></ul>
+          </div>
+          <div class="add-todo"><input /><button>Add To-Do</button></div>
+          <div class="future panel">
+            <h2>Coming Up</h2>
+            <div class="events"></div>
+          </div>
+          <div class="coming-up"><input /><button>Add Date</button></div>
+          <div class="meditate panel">
+            <h2>Meditate On...</h2>
+            <ul></ul>
+          </div>
+          <div class="add-thought"><input /><button>Add Thought</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="de-modal hidden"><div class="de-modal-content"><span class="close">&#10006;</span><p>From David Burns' <i>Feeling Good</i>: Each task is done for either mastery or pleasure.  If mastery, rate the perceived and actual difficulty of the task. If pleasure, rate the perceived and actual enjoyment from the task.</p></div></div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Roboto:wght@300&display=swap");
+
+body {
+  margin: auto 0;
+  background-image: linear-gradient(#fff1bf, #ec458d, #474ed7);
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  font-size: 9.5pt;
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  font-family: "Playfair Display", serif;
+  color: rgb(0, 0, 0, 0.85);
+  font-size: 25pt;
+  text-align: center;
+}
+
+h2 {
+  display: inline-block;
+  margin: 0 0 10px 0;
+  font-family: "Playfair Display", serif;
+  color: rgb(0, 0, 0, 0.85);
+  font-size: 17pt;
+}
+
+p {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.panel {
+  background-color: rgb(255, 241, 191, 0.8);
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.goal {
+  margin: 15px 0 25px 0;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  font-family: "Playfair Display", serif;
+  color: rgb(71, 78, 215, 0.85);
+  text-shadow: rgb(71, 78, 215) 0px 0px 2px;
+  font-size: 25pt;
+  text-align: center;
+}
+
+.middle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.left {
+  width: 60%;
+}
+
+.schedule-container {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  overflow: scroll;
+}
+
+.schedule input {
+  font-family: "Roboto", sans-serif;
+}
+
+.projected,
+.actual {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.sched-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.de {
+  margin-top: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.projected .time:nth-of-type(odd) {
+  background-color: rgb(236, 69, 141, 0.45);
+}
+
+.actual .time:nth-of-type(even) {
+  background-color: rgb(236, 69, 141, 0.45);
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 5px;
+  border-radius: 2px;
+  font-family: "Playfair Display", serif;
+}
+
+.event {
+  width: 75%;
+  background-color: transparent;
+  border: none;
+  margin-left: 5px;
+}
+
+.right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.todo li {
+  list-style: none;
+}
+
+.todo ul {
+  padding: 0 0 0 5px;
+}
+
+.coming-up,
+.add-todo,
+.add-thought {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-top: -7px;
+}
+
+.event-date {
+  font-family: "Playfair Display", serif;
+  width: 25%;
+  display: inline-block;
+}
+
+.add-todo input,
+.coming-up input,
+.add-thought input {
+  background-color: rgba(71, 78, 215, 0.2);
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid rgba(71, 78, 215, 0.2);
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  color: #fff1bf;
+  font-size: 9pt;
+}
+
+.coming-up button,
+.add-todo button,
+.add-thought button {
+  background-color: #474ed7;
+  color: #fff1bf;
+  border: 1px solid rgb(236, 69, 141, 0.45);
+  padding: 3px 20px;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 9pt;
+}
+
+.meditate ul {
+  padding: 0 0 0 15px;
+}
+
+.meditate li {
+  padding: 0 0 5px 0;
+}
+
+.score {
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border: 1px solid rgb(236, 69, 141, 0.85);
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 8pt;
+  color: rgb(236, 69, 141);
+}
+
+.score-clicked {
+  background-color: rgb(236, 69, 141, 0.85);
+  color: #fff1bf;
+}
+
+.de-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(71, 78, 215, 0.75);
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.de-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 241, 191, 0.95);
+  padding: 15px;
+  width: 50%;
+  border-radius: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+.close {
+  width: 100%;
+  display: block;
+  text-align: right;
+  margin: -10px 0 0 5px;
+  font-size: 12pt;
+}
